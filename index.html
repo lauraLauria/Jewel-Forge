@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>JEWEL-FORGE</title>
+  </head>
+  <body>
+    <main>
+      <div id="game-intro">
+        <img
+          src="Images/shutterstock_1629648892.jpg"
+          alt=""
+          class="Backgroung_Intro"
+        />
+        <button id="start-button">Enter the Shop</button>
+        <p>Start yout Journey now!</p>
+      </div>
+      <div id="game-container">
+        <div>
+          <h2>Stats</h2>
+          <p>Score: <span id="score">0</span></p>
+          <p>Lives: <span id="lives">3</span></p>
+        </div>
+        <div id="game-screen">
+          <form>
+            <p>
+              Material: <input type="radio" name="material" value="gold" /> Gold
+              <input type="radio" name="material" value="silver" /> Silver
+              <input type="radio" name="material" value="copper" /> Copper
+              <input type="radio" name="material" value="wood" /> Wood
+            </p>
+
+            <p>
+              Color: <input type="radio" name="color" value="yellow" /> Yellow
+              <input type="radio" name="color" value="grey" /> Grey
+              <input type="radio" name="color" value="brown" /> Brown
+              <input type="radio" name="color" value="orange" /> Orange
+            </p>
+
+            <p>
+              Shape: <input type="radio" name="shape" value="ring" /> Ring
+              <input type="radio" name="shape" value="necklace" /> Necklace
+              <input type="radio" name="shape" value="bracelet" /> Bracelet
+              <input type="radio" name="shape" value="earring" /> Earring
+            </p>
+
+            <p>
+              Extras:
+              <input type="radio" name="extras" value="diamond" /> Diamond
+              <input type="radio" name="extras" value="pearl" /> Pearl
+              <input type="radio" name="extras" value="ruby" /> Ruby
+              <input type="radio" name="extras" value="emerald" /> Emerald
+            </p>
+
+            <button type="button" onclick="captureUserChoices()">Submit</button>
+          </form>
+          <!-- <div id="material-contrainers"></div>
+          <div id="colours-containers"></div>
+          <div id="shape-containers"></div>
+          <div id="extra-containers"></div> -->
+        </div>
+      </div
+      <!-- <div id="game-end">
+        <img src="./images/logo.png" alt="" class="logo-img" />
+        <h1>Out of business</h1>
+        <br />
+        <button id="restart-button">Invest & Restart</button>
+      </div> -->
+    </main>
+    <script type="text/javascript" src="js/jewelery.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
