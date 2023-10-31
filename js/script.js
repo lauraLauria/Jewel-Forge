@@ -16,6 +16,11 @@ window.onload = function () {
   function restartGame() {
     location.reload();
   }
+  game.radioOptions.forEach((option) => {
+    option.addEventListener("input", (event) => {
+      console.log(game.currentShape);
+      console.log(event.target.name);
+      console.log(event.target.value);
+    });
+  });
 };
-
-//On Click function needed

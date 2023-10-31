@@ -9,12 +9,13 @@
   </head>
   <body>
     <main>
-      <div id="game-intro">
-        <img
-          src="Images/shutterstock_1629648892.jpg"
+      <!-- <img src="Images/welcome-to-jewel-forge-the-ultimate-jewelry-craft-upscaled Kopie.png" style=:display: cover;> -->
+      <!-- <img
+          src="Images/welcome-to-jewel-forge-the-ultimate-jewelry-craft-upscaled Kopie.png"
           alt=""
           class="Backgroung_Intro"
-        />
+        /> -->
+      <div id="game-intro">
         <button id="start-button">Enter the Shop</button>
         <p>Start yout Journey now!</p>
       </div>
@@ -25,7 +26,8 @@
           <p>Lives: <span id="lives">3</span></p>
         </div>
         <div id="game-screen">
-          <form>
+          <div id="shapes-container"></div>
+          <form id="choices-container">
             <p>
               Material: <input type="radio" name="material" value="gold" /> Gold
               <input type="radio" name="material" value="silver" /> Silver
@@ -55,22 +57,22 @@
               <input type="radio" name="extras" value="emerald" /> Emerald
             </p>
 
-            <button type="button" onclick="captureUserChoices()">Submit</button>
+            <button type="button" onclick="captureUserChoices()">FORGE</button>
           </form>
           <!-- <div id="material-contrainers"></div>
           <div id="colours-containers"></div>
           <div id="shape-containers"></div>
           <div id="extra-containers"></div> -->
         </div>
-      </div
-      <!-- <div id="game-end">
+      </div>
+      <div id="game-end">
         <img src="./images/logo.png" alt="" class="logo-img" />
         <h1>Out of business</h1>
         <br />
         <button id="restart-button">Invest & Restart</button>
-      </div> -->
+      </div>
     </main>
-    <script type="text/javascript" src="js/jewelery.js"></script>
+
     <script type="text/javascript" src="js/game.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
