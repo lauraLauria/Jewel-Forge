@@ -14,14 +14,17 @@
           Become the number one jewelery crafter and open your very own
           goldsmith's shop
         </p>
-        <button id="start-button">Start your journey now!</button>‚
+        <button id="start-button">Start your journey now!</button>
       </div>
       <div id="game-container">
         <div id="game-screen">
           <div>
             <h2>Stats</h2>
-            <p>Score: <span id="score">0</span></p>
-            <p>Lives: <span id="lives">3</span></p>
+            <div id="lives-score">
+              <p>Score: <span id="score">0</span></p>
+              <p>Lives: <span id="lives">3</span></p>
+            </div>
+
           </div>
           <div id="shapes-container"></div>
           <form id="choices-container">
@@ -66,9 +69,8 @@
         </div>
       </div>
       <div id="game-end">
-        <button id="restart-button">Invest & Restart</button>
+        <button id="restart-button">OK! <br> Restart</button>
         <br />
-        <!-- <h1>Out of business</h1> -->
       </div>
     </main>
     <script type="text/javascript" src="js/game.js"></script>

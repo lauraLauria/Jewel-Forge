@@ -18,7 +18,13 @@ body {
 h2 {
   color: antiquewhite;
   font-family: "Courier New", Courier, monospace;
-  font-size: 45px;
+  font-size: 50px;
+}
+#lives-score {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: antiquewhite;
+  font-size: 24px;
 }
 
 main {
@@ -87,8 +93,10 @@ img {
 
 #current-choice-image {
   position: relative; /* or 'absolute' or 'fixed', depending on your layout */
-  top: 30%; /* Adjust the top position as needed */
+  top: 40%; /* Adjust the top position as needed */
   left: 0px; /* Adjust the left position as needed */
+  
+
 }
 
 input[type="radio"] {

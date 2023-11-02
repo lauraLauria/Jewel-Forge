@@ -70,13 +70,26 @@ class Game {
         }
         this.livesElement.innerHTML = this.lives;
         this.toNextLevel();
+
+        this.radioOptions.forEach((radio) => {
+          radio.checked = false;
+        });
         return;
       }
+      if (this.score >= 50) {
+        this.gameEndScreen.style.display = "block";
+        this.gameScreen.style.display = "none";
+      }
     }
+
     this.score = this.score + 10;
     this.scoreElement.innerHTML = this.score;
     console.log("right choice");
     this.toNextLevel();
+
+    this.radioOptions.forEach((radio) => {
+      radio.checked = false;
+    });
   }
 
   start() {
