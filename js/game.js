@@ -14,7 +14,7 @@ class Game {
         color: "yellow",
         shape: "ring",
         extras: "diamond",
-        img: "../Images/ring.png",
+        img: ".././Images/ring.png",
       },
       {
         material: "silver",
