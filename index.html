@@ -10,49 +10,60 @@
   <body>
     <main>
       <div id="game-intro">
-        <button id="start-button">Enter the Shop</button>
-        <p>Start yout Journey now!</p>
+        <p id="intro-text">
+          Become the number one jewelery crafter and open your very own
+          goldsmith's shop
+        </p>
+        <button id="start-button">Start your journey now!</button>‚
       </div>
       <div id="game-container">
-        <div>
+        <!-- <div>
           <h2>Stats</h2>
           <p>Score: <span id="score">0</span></p>
           <p>Lives: <span id="lives">3</span></p>
-        </div>
+        </div> -->
         <div id="game-screen">
+          <div id="stats-container">
+            <h2>Stats</h2>
+            <p>Score: <span id="score">0</span></p>
+            <p>Lives: <span id="lives">3</span></p>
+          </div>
           <div id="shapes-container"></div>
-          <form id="choices-container">
-            <p>
-              Material: <input type="radio" name="material" value="gold" /> Gold
-              <input type="radio" name="material" value="silver" /> Silver
-              <input type="radio" name="material" value="copper" /> Copper
-              <input type="radio" name="material" value="wood" /> Wood
-            </p>
+          <div id="choices-container">
+            <div id="choices">
+              <p class="radio-lable">
+                Material:
+                <input type="radio" name="material" value="gold" /> Gold
+                <input type="radio" name="material" value="silver" /> Silver
+                <input type="radio" name="material" value="copper" /> Copper
+                <input type="radio" name="material" value="wood" /> Wood
+              </p>
 
-            <p>
-              Color: <input type="radio" name="color" value="yellow" /> Yellow
-              <input type="radio" name="color" value="grey" /> Grey
-              <input type="radio" name="color" value="brown" /> Brown
-              <input type="radio" name="color" value="orange" /> Orange
-            </p>
+              <p class="radio-lable">
+                Color: <input type="radio" name="color" value="yellow" /> Yellow
+                <input type="radio" name="color" value="grey" /> Grey
+                <input type="radio" name="color" value="brown" /> Brown
+                <input type="radio" name="color" value="orange" /> Orange
+              </p>
 
-            <p>
-              Shape: <input type="radio" name="shape" value="ring" /> Ring
-              <input type="radio" name="shape" value="necklace" /> Necklace
-              <input type="radio" name="shape" value="bracelet" /> Bracelet
-              <input type="radio" name="shape" value="earring" /> Earring
-            </p>
+              <p class="radio-lable">
+                Shape: <input type="radio" name="shape" value="ring" /> Ring
+                <input type="radio" name="shape" value="necklace" /> Necklace
+                <input type="radio" name="shape" value="bracelet" /> Bracelet
+                <input type="radio" name="shape" value="earring" /> Earring
+              </p>
 
-            <p>
-              Extras:
-              <input type="radio" name="extras" value="diamond" /> Diamond
-              <input type="radio" name="extras" value="pearl" /> Pearl
-              <input type="radio" name="extras" value="ruby" /> Ruby
-              <input type="radio" name="extras" value="emerald" /> Emerald
-            </p>
+              <p class="radio-lable">
+                Extras:
+                <input type="radio" name="extras" value="diamond" /> Diamond
+                <input type="radio" name="extras" value="pearl" /> Pearl
+                <input type="radio" name="extras" value="ruby" /> Ruby
+                <input type="radio" name="extras" value="emerald" /> Emerald
+              </p>
+            </div>
 
             <button type="button" id="forge-button">FORGE</button>
-          </form>
+          </div>
           <div id="material-contrainers"></div>
           <div id="colours-containers"></div>
           <div id="shape-containers"></div>

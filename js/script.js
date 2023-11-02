@@ -2,6 +2,7 @@ window.onload = function () {
   const startButton = document.getElementById("start-button");
   const restartButton = document.getElementById("restart-button");
   const forgeButton = document.getElementById("forge-button");
+
   let game = new Game();
 
   forgeButton.addEventListener("click", function () {
