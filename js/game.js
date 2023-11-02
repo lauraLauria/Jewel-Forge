@@ -64,6 +64,10 @@ class Game {
       if (this.currentShape[key] !== this.userChoices[key]) {
         console.log("wrong choice");
         this.lives--;
+        if (this.lives === 0) {
+          this.gameEndScreen.style.display = "block";
+          this.gameScreen.style.display = "none";
+        }
         this.livesElement.innerHTML = this.lives;
         this.toNextLevel();
         return;
