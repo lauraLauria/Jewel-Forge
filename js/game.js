@@ -14,14 +14,14 @@ class Game {
         color: "yellow",
         shape: "ring",
         extras: "diamond",
-        img: "/Images/ring.png",
+        img: "../Images/ring.png",
       },
       {
         material: "silver",
         color: "grey",
         shape: "earring",
         extras: "pearl",
-        img: "/Images/earrings.png",
+        img: "../Images/earrings.png",
       },
       {
         material: "copper",
