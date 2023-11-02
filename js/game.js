@@ -14,21 +14,21 @@ class Game {
         color: "yellow",
         shape: "ring",
         extras: "diamond",
-        img: "ring.png",
+        img: "/ring.png",
       },
       {
         material: "silver",
         color: "grey",
         shape: "earring",
         extras: "pearl",
-        img: "earrings.png",
+        img: "/earrings.png",
       },
       {
         material: "copper",
         color: "orange",
         shape: "necklace",
         extras: "ruby",
-        img: "necklace.png",
+        img: "/necklace.png",
       },
       /////
       {
@@ -36,7 +36,7 @@ class Game {
         color: "brown",
         shape: "bracelet",
         extras: "emerald",
-        img: "bracelet.png",
+        img: "/bracelet.png",
       },
     ];
     this.currentShape = {};
