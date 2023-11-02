@@ -30,6 +30,7 @@ class Game {
         extras: "ruby",
         img: "../Images/necklace.png",
       },
+      /////
       {
         material: "wood",
         color: "brown",
