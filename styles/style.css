@@ -1,20 +1,25 @@
 body {
-  padding: 0;
   text-align: center;
   background-image: url(../Images/intro-background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100vw;
-  height: 100vh;
+  background-attachment: block;
+  margin: 0;
+}
+
+.head {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#stats-container {
+  width: 10%;
 }
 
 h2 {
   color: antiquewhite;
-}
-
-div > p:first-child {
-  color: red; /* Change the color to red or your preferred color */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 45px;
 }
 
 main {
@@ -34,47 +39,101 @@ img {
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 20px 0px;
+  padding: 0px;
   justify-content: center;
 }
 
 #game-screen {
-  background-image: url(../Images/game-screen-background.png);
   display: none;
-  align-content: center;
-  padding: 20px 0px;
-  /* overflow: hidden; */
+  background-image: url(../Images/game-screen-background.png);
+  background-size: cover;
+  background-position: center; /* Center the background image. */
+  background-repeat: no-repeat; /* Prevent the background image from repeating. */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   position: relative;
 }
 
 #shapes-container {
-  width: 30%;
-  border: 1px solid;
+  width: 20%;
+  border: none;
+  border-radius: 420px;
+  background: rgba(208, 111, 111, 0.62);
 }
+
 
 #shapes-container img {
   width: 100%;
+  border: none;
 }
 
 #choices-container {
-  border: 1px solid;
-  width: 70%;
+  position: relative;
+  border: none;
+  width: 50%;
+}
+
+#choices {
+  position: absolute;
+  border-radius: 420px;
+  background: rgba(208, 111, 111, 0.62);
+  width: 1340px;
+  height: 783px;
+}
+
+#current-choice-image {
+  position: relative; /* or 'absolute' or 'fixed', depending on your layout */
+  top: 30%; /* Adjust the top position as needed */
+  left: 0px; /* Adjust the left position as needed */
+  
+}
+
+input[type="radio"] {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #333;
+  margin-right: 27px; /* Add spacing between radio buttons */
+}
+
+.radio-lable {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  color: #490d09;
+  margin-top: 40px;
 }
 
 #game-end {
   display: none;
 }
 
-.game-intro p {
-  font-size: 18px;
-  font-family: "Verdana";
+#intro-text {
+  position: absolute;
+  top: 0.2%;
+  left: 40%;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  color: #541410;
+  font-weight: bold;
+  background-color: rgba(
+    194,
+    147,
+    45,
+    0.4
+  ); /* Adjust the alpha value as needed */
+  display: inline-block;
+  width: 600px; /* Adjust the width as needed */
 }
 
 body button {
-  position: center;
+  position: absolute;
+  top: 40%;
+  left: 45%;
   font-family: "Courier", Courier, monospace;
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 900;
   background-color: #c2932d;
   color: #541410;
   padding: 15px 20px;
@@ -82,4 +141,17 @@ body button {
   box-shadow: 0;
   border-radius: 20px;
   margin-bottom: 0px;
+}
+
+#forge-button {
+  top: 49%; /* Adjust the top position as needed */
+  left: 50%; /* Adjust the left position as needed */
+  font-size: 40px;
+  font-weight: 900;
+  background-color: #c2932d;
+  color: #541410;
+  padding: 20px 30px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 20px;
 }

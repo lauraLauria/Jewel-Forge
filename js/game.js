@@ -3,6 +3,7 @@ class Game {
     this.startScreen = document.getElementById("game-intro");
     this.gameScreen = document.getElementById("game-screen");
     this.gameEndScreen = document.getElementById("game-end");
+    this.shapeScreen = document.getElementById("shapes-container");
     this.lives = 3;
     this.score = 0;
     this.livesElement = document.getElementById("lives");
@@ -14,28 +15,28 @@ class Game {
         color: "yellow",
         shape: "ring",
         extras: "diamond",
-        img: "Images/golden-ring-with-diamond-in-game-upscaled.png",
+        img: "Images/ring.png",
       },
       {
         material: "silver",
         color: "grey",
         shape: "earring",
         extras: "pearl",
-        img: "Images/silver-earrings-with-pearls-upscaled.png",
+        img: "Images/earrings.png",
       },
       {
         material: "copper",
         color: "orange",
         shape: "necklace",
         extras: "ruby",
-        img: "Images/necklace-made-of-copper-colour-orange-with-a-rub-upscaled.png",
+        img: "Images/necklace.png",
       },
       {
         material: "wood",
         color: "brown",
         shape: "bracelet",
         extras: "emerald",
-        img: "Images/bracelet-made-out-of-wood-with-an-emerald-on-it-in.jpg",
+        img: "Images/bracelet.png",
       },
     ];
     this.currentShape = {};
@@ -84,14 +85,34 @@ class Game {
     const img = document.createElement("img");
     img.id = "current-choice-image";
     img.src = this.currentShape.img;
+
+    console.log(this.currentShape);
+    this.livesElement.innerHTML = 3;
+    this.scoreElement.innerHTML = 0;
     document.getElementById("shapes-container").appendChild(img);
     this.gameLoop();
   }
 
   gameLoop() {
     console.log("in the game loop");
-    if (this.gameIsOver) {
+
+    if (this.lives === 0) {
+      console.log(this.lives);
+      console.log("I am done hihihihi");
+      this.endGame();
+    } else {
+      window.requestAnimationFrame(this.gameLoop.bind(this));
       return;
     }
+  }
+  endGame() {
+    console.log("Ohh you called me ? Because game is finish right...!");
+    this.gameIsOver = true;
+    this.score = 0;
+    this.lives = 3;
+    this.currentShape = {};
+    this.userChoices = {};
+    this.gameScreen.style.display = "none";
+    this.gameEndScreen.style.display = "block";
   }
 }
