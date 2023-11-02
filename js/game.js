@@ -14,28 +14,28 @@ class Game {
         color: "yellow",
         shape: "ring",
         extras: "diamond",
-        img: "/Images/ring.png",
+        img: "../Images/ring.png",
       },
       {
         material: "silver",
         color: "grey",
         shape: "earring",
         extras: "pearl",
-        img: "/Images/earrings.png",
+        img: "../Images/earrings.png",
       },
       {
         material: "copper",
         color: "orange",
         shape: "necklace",
         extras: "ruby",
-        img: "/Images/necklace.png",
+        img: "../Images/necklace.png",
       },
       {
         material: "wood",
         color: "brown",
         shape: "bracelet",
         extras: "emerald",
-        img: "/Images/bracelet.png",
+        img: "../Images/bracelet.png",
       },
     ];
     this.currentShape = {};
